@@ -39,4 +39,48 @@ We compared two ensemble algorithms to determine which would result in the best 
 
 ### Deliverable 4: Summary
 
-Looking at the results, we see that 
+Looking at the results, we see that the ensemble alorithms drastically out performed the models from Deliverable 1 and 2 in regards to accuracy. The first models we used had the following results:
+
+#### RandomOverSampler 
+- Accuracy  65.2%
+- Precision High Risk: 1%
+- Precision Low Risk: 100%
+- Recall High Risk: 62%
+- Recall Low Risk: 68%
+
+#### SMOTE 
+- Accuracy  62.4%
+- Precision High Risk: 1%
+- Precision Low Risk: 100%
+- Recall High Risk: 59%
+- Recall Low Risk: 66%
+
+#### ClusterCentroids
+- Accuracy  51.6%
+- Precision High Risk: 1%
+- Precision Low Risk: 100%
+- Recall High Risk: 60%
+- Recall Low Risk: 43%
+
+#### SMOTEENN
+- Accuracy  62.2%
+- Precision High Risk: 1%
+- Precision Low Risk: 100%
+- Recall High Risk: 71%
+- Recall Low Risk: 53%
+
+#### Balanced Random Forest Classifier
+- Accuracy  78.8%
+- Precision High Risk: 1%
+- Precision Low Risk: 100%
+- Recall High Risk: 67%
+- Recall Low Risk: 91%
+
+#### Easy Ensemble AdaBoost Classifier
+- Accuracy  92.5%
+- Precision High Risk: 7%
+- Precision Low Risk: 100%
+- Recall High Risk: 91%
+- Recall Low Risk: 94%
+
+Factoring in all of the info from the different models, the Easy Ensemble AdaBoost Classifier performed the best. It had a very high accuracy rate of 92.5% but the recall rate of 91% means that there will be a relativley high amount of low risk applications flagged as high risk. This indicates that there would be risk in using this model, but it did perform better than the others in the evaluation. 
